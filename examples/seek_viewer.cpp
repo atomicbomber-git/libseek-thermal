@@ -67,7 +67,7 @@ void overlay_values(Mat &outframe, Point coord, Scalar color) {
 void draw_temp(Mat &outframe, double temp, Point coord, Scalar color) {
     char txt [64];
     sprintf(txt, "%5.1f", temp);
-    putText(outframe, txt, coord-Point(20, -20), FONT_HERSHEY_COMPLEX_SMALL, 0.75, color, 1, CV_AA);
+    putText(outframe, txt, coord-Point(20, -20), FONT_HERSHEY_COMPLEX_SMALL, 0.75, color, 1, CV_MSA);
 }
 
 // Function to process a raw (corrected) seek frame
